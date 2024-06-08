@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.left-container{
+    width: 30%;
+    height: 100vh;
+    border: 1px solid black;
+    background-color: beige;
+}
+.right-container{
+    width: 70%;
+    height: 100vh;
+    border: 1px solid red;
+}
