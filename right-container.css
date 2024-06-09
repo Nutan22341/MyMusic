@@ -1,4 +1,4 @@
-.right-container{
+.right-container {
     overflow-y: scroll;
     padding-top: 1.5rem;
     padding-left: 1rem;
@@ -11,48 +11,55 @@
     border-radius: 10px;
 }
 
-img{
+img {
     width: 80%;
     border: 1px solid black;
     color: white;
-    
+
 }
-.right-box{
+
+.right-box {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.right-box h2{
+.right-box h2 {
     color: #fbfbfb;
 }
-.right-cards-container{
+
+.right-cards-container {
     display: flex;
     flex-direction: row;
 
 }
-.right-card{
-    position:relative;
+
+.right-card {
+    position: relative;
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
+    align-items: flex-start;
     row-gap: 2px;
 
 }
-.right-card-para1{
+
+.right-card-para1 {
     color: #ffffff;
 }
-.right-card-para2{
+
+.right-card-para2 {
     color: #a6a6a6;
 }
 
-.right-card:hover{
+.right-card:hover {
     background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
-    .right-card-play-svg{
+
+    .right-card-play-svg {
         opacity: 1;
     }
 }
-.right-card-play-svg{
+
+.right-card-play-svg {
     position: absolute;
     width: 2.3rem;
     top: 8rem;
