@@ -25,3 +25,138 @@
     --decorative-base: #fff;
     --decorative-subdued: #292929;
 }
+.left-container{
+    width: 30%;
+    height: 100vh;
+    border: 1px solid black;
+    background-color: #000;
+    /* overflow-y: scroll; */
+}
+.right-container{
+    width: 70%;
+    height: 100vh;
+}
+.logo-image{
+    padding: 1.5rem;
+    opacity: 4;
+}
+.left-navbar{
+    background-color: #121212;
+    opacity: 2;
+    border: none;
+    border-radius: 8px;
+    margin: 0.5rem;
+    height: 12%;
+    margin-right: 0%;
+}
+.left-hero{
+    height: 100%;
+    background-color: #121212;
+    border: none;
+    border-radius: 8px;
+    margin: 0.5rem;
+    margin-right: 0%;
+}
+.right-navbar{
+    background-color: #121212;
+    border: none;
+    border-radius: 8px;
+    margin: 0.5rem;
+    padding: 1.5rem;
+    height: 12%;
+    margin-bottom: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.home_text{
+    font-weight: 700px;
+    color: #ffffff;
+    text-align: center;
+}
+.home-section{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    /* text-align: center; */
+    align-items: center;
+}
+.search-section{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+.search_text{
+    font-weight: 700px;
+    color: gray;
+    text-align: center;
+}
+.search-Img:hover{
+    fill: #ffffff;
+}
+.search_text:hover{
+    color: #ffffff;
+}
+.hometext,.searchtext{
+    text-decoration: none;
+}
+.left-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: blue;
+    overflow-y: scroll;
+    width: 100%;
+    height: 300px;
+    padding: 2rem;
+}
+
+.left-card {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    row-gap: 2px;
+    gap: 1rem;
+    padding: 1rem;
+
+}
+
+.left-card-para1 {
+    color: #ffffff;
+}
+
+.left-card-para2 {
+    color: #a6a6a6;
+}
+
+.left-card:hover {
+    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+
+    .right-card-play-svg {
+        opacity: 1;
+    }
+}
+
+.left-card-play-svg {
+    position: absolute;
+    width: 2.3rem;
+    top: 8rem;
+    left: 75%;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.artist-img{
+    width: 40%;
+    border: 1px solid black;
+    color: white;
+}
+.artist-desc{
+    display: flex;
+    flex-direction: column;
+}
