@@ -1,4 +1,9 @@
-.right-container {
+.right-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.right-content{
     overflow-y: scroll;
     /* padding-top: 1.5rem; */
     /* padding-left: 1rem;
@@ -10,6 +15,7 @@
     flex-direction: column;
     row-gap: 2.5rem;
     border-radius: 10px;
+
 }
 
 img {
