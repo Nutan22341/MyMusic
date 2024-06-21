@@ -30,6 +30,8 @@ img {
     flex-direction: column;
     gap: 1rem;
     margin: 0.5rem;
+    width: 100%;
+
 }
 
 .right-box h2 {
@@ -39,10 +41,13 @@ img {
 .right-cards-container {
     display: flex;
     flex-direction: row;
+    overflow-x :auto;
+
 
 }
 
 .right-card {
+    width: 40%;
     position: relative;
     display: flex;
     flex-direction: column;
