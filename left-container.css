@@ -50,12 +50,17 @@
     margin-right: 0%;
 }
 .left-hero{
-    height: 100%;
+    height: 84.5%;
     background-color: #121212;
     border: none;
     border-radius: 8px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     margin: 0.5rem;
     margin-right: 0%;
+    /* cursor: all-scroll; */
+    overflow: hidden;
+    margin-bottom: 0rem;
 }
 .right-navbar{
     background-color: #121212;
@@ -106,15 +111,14 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: blue;
+    background-color: #1c1c1c;
     overflow-y: scroll;
     width: 100%;
-    height: 300px;
+    height: 25rem;
     padding: 2rem;
 }
 
 .left-card {
-    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -159,4 +163,58 @@
 .artist-desc{
     display: flex;
     flex-direction: column;
+}
+.left-footer{
+    background-color: #1c1c1c;
+    height: 12rem;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 4rem;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+.footer-box{
+    background-color: #1c1c1c;
+    display: flex;
+    flex-direction: column;
+}
+.uppar-box{
+    background-color: #1c1c1c;
+    display: grid;
+    grid-template-areas: 
+       "leagal safety safety"
+       "privacy cookies about"
+       "accessibility accessibility accessibility"
+    ;
+    column-gap: 0.8rem;
+}
+#legal{
+    grid-area: legal;
+}
+#safety{
+    grid-area: safety;
+}
+#privacy{
+    grid-area: privacy;
+}
+#cookies{
+    grid-area: cookies;
+}
+#about{
+    grid-area: about;
+}
+#accessibility{
+    grid-area: accessibility;
+}
+#grid-item{
+    font-size: 0.85rem;
+    text-decoration: none;
+    color: #a6a6a6;
+}
+#lower-cookies{
+    font-size: 0.85rem;
+    text-decoration: none;
+    color: #a6a6a6;
 }
