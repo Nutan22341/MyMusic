@@ -15,10 +15,17 @@ try {
     const nameOfSong = songData.name;
     const primaryartists = songData.artists.primary;
     let artistNames= "";
-    primaryartists.forEach((artistObject)=>{
-        let artist_name = artistObject.name;
+    for(let i=0;i<primaryartists.length;i++){
+      if(i==primaryartists.length-1){
+        let artist_name = primaryartists[i].name;
+        artistNames+=artist_name;
+      }
+      else{
+        let artist_name = primaryartists[i].name;
         artistNames+=artist_name+ ", "
-    })
+      }
+    }
+    
     const image = songData.image[2];
     const imageURL = image.url;
 
@@ -27,9 +34,14 @@ try {
                         <img src="${imageURL}" alt="img">
                         <p class="right-card-para1">${nameOfSong}</p>
                         <p class="right-card-para2">${artistNames}</p>
-                        <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="right-card-play-svg" style="background-color: #1ed760;"  ><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                        <svg onclick="clicked(event,'${songID}')" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="right-card-play-svg" style="background-color: #1ed760;"  ><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z" ></path></svg>
                     </div>`
     parentContainer.innerHTML += songDiv;
     
   });
 } catch (error) {}
+
+function clicked(event,id){
+  alert("button clicked with song id as: "+id)
+  console.log(id);
+}
