@@ -47,11 +47,15 @@
     
 }
 #right-cards-songs{
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 
 #right-cards-albums{
-    overflow-x: scroll;
+    overflow-x: auto;
+}
+
+#right-cards-playlists{
+    overflow-x: auto;
 }
 .right-card {
     min-width: 200px;
@@ -60,7 +64,6 @@
     flex-direction: column;
     align-items: flex-start;
     row-gap: 2px;
-
 }
 
 
@@ -85,7 +88,7 @@
 .right-card-play-svg {
     cursor:pointer;
     position: absolute;
-    width: 2.3rem;
+    width: 15%;
     top: 7rem;
     left: 60%;
     border-radius: 50%;

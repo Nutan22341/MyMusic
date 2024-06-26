@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Results</title>
+    <script src="../src/search.js" defer></script>
+    <link rel="stylesheet" href="../styles/SearchResults.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="search-heading">Search Results For:&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+        <hr />
+        <div class="navbar">
+            <a href="#top-result" class="button-30">Top Result</a>
+            <a href="#songs-section" class="button-30">Songs</a>
+            <a href="#artists-section" class="button-30">Artists</a>
+            <a href="#albums-section" class="button-30">Albums</a>
+            <a href="#playlists-section" class="button-30">Playlists</a>
+        </div>
+        <div class="content">
+            <section class="sections" id="top-result">
+                <h2 id="top-result-heading">Top Result:&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+                <!-- data will be added dynamically -->
+            </section>
+            <section class="sections" id="songs-section">
+                <h2>Songs</h2>
+                <div class="category-container" id="songs"></div>
+            </section>
+            <section class="sections" id="artists-section">
+                <h2>Artists</h2>
+                <div class="category-container" id="artists"></div>
+            </section>
+            <section class="sections" id="albums-section">
+                <h2>Albums</h2>
+                <div class="category-container" id="albums"></div>
+            </section>
+            <section class="sections" id="playlists-section">
+                <h2>Playlists</h2>
+                <div class="category-container" id="playlists"></div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
