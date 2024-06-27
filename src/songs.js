@@ -42,6 +42,6 @@ try {
 } catch (error) {}
 
 function clicked(event,id){
-  alert("button clicked with song id as: "+id)
+  window.location.href = `/index2.html?query=${id}`;
   console.log(id);
 }
