@@ -10,19 +10,22 @@
     <div class="outer-song-container">
         <div class="inner-song-container">
             <!-- for song image -->
-            <div class="left-container"></div>
-            <!-- all about the image -->
-            <div class="right-container">
-                <h1 class="songName"></h1>
-                <div class="song-desc">
-                    <p class="artist-names"></p>
-                    <p class="album-name"></p>
+             <div class="inner-box">
+                <div class="left-container"></div>
+                <!-- all about the image -->
+                <div class="right-container">
+                    <h1 class="songName"></h1>
+                    <div class="song-desc">
+                        <p class="artist-names"></p>
+                        <p class="album-name"></p>
+                    </div>
+                    <video width="400" height="140" controls  id="playsong">
+                        <source src="movie.mp4" type="video/mp4" id="play">
+                      </video>
                 </div>
-                <video width="320" height="240" controls autoplay id="playsong">
-                    <source src="movie.mp4" type="video/mp4" id="play">
-                  </video>
-            </div>
-            <div class="footer-line"></div>
+             </div>
+             <div class="footer-line"></div>
+             <p class="footer-section">@spotify.com</p>
         </div>
     </div>
     <script src="nextpage.js"></script>
