@@ -1,5 +1,5 @@
 // ids of some famous songs
-const array = ["vHNA1Gtr", "NQHF6I59", "Ap1mYWUe", "24nCWVjY", "UJ0dGLpm"];
+const array = ["vHNA1Gtr", "NQHF6I59", "Ap1mYWUe", "24nCWVjY", "UJ0dGLpm", "XoNWyaL6","MMELyze6","tQHG-WQ3","3sqO4eZy","lULDgPcz","ItrQFPke","kVGYhq-r","tD4RoIPl"];
 //insertion of cards will happen here
 const SongparentContainer = document.getElementById("right-cards-songs");
 
