@@ -113,16 +113,10 @@ const addArtists=(artists)=>{
     const parentContainer = document.getElementById("artists")
     artists.forEach(artistObject => {
         const image = artistObject.image[2];
-        const div = `<div class="category-card">
+        const div = `<div class="category-card artist-category-card" onclick="artistClicked(event,'${artistObject.id}')">
                         <img src="${image.url}" alt="img" />
                         <p class="category-card-para1">${artistObject.title}</p>
                         <p class="category-card-para2">Artist</p>
-                        <svg onclick="artistClicked(event,'${artistObject.id}')" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24"
-                            class="category-card-play-svg" style="background-color: #1ed760">
-                            <path
-                                d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
-                            </path>
-                        </svg>
                     </div>`
         parentContainer.innerHTML+=div; 
     });
@@ -184,31 +178,32 @@ const getSearchResults = async ()=>{
         //now start dynamically adding this data
         if(topresults.length ===0){
             //nothing to display
-            alert("nothing in top results");
+            document.getElementById("top-not-found").style.display="block";
         }
         else{
             addTopResults(topresults);
         }
         if(songs.length ===0){
-            alert("nothing in songs section")
+            document.getElementById("song-not-found").style.display="block";
         }
         else{
             addSongs(songs);
         }
         if(artists.length ===0){
-            alert("nothing in artists section")
+            document.getElementById("artist-not-found").style.display="block";
         }
         else{
             addArtists(artists);
         }
         if(albums.length ===0){
+            document.getElementById("album-not-found").style.display="block";
             alert("nothing to show in albums section");
         }
         else{
             addAlbums(albums);
         }
         if(playlists.length===0){
-            alert("nothing to show in playlist section");
+            document.getElementById("playlist-not-found").style.display="block";
         }
         else{
             addPlaylists(playlists);
@@ -222,13 +217,14 @@ getSearchResults()
 
 
 function songClicked(event,id){
-    alert("song clicked with song id as: "+id)
+    window.location.href = `/views/Songs.html?query=${id}`;
     console.log(id);
 }
 
 
 function artistClicked(event,id){
-    alert("artist clicked with artist id as: "+id)
+    const encodedMessage = encodeURIComponent(id);
+    window.location.href = `/views/Artist.html?artist=${encodedMessage}`;
     console.log(id);
 }
 
