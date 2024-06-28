@@ -9,7 +9,7 @@ try {
     const response = await fetch(`https://saavn.dev/api/songs/${songID}`);
     const responseData = await response.json();
     if(!responseData.success){
-        alert("Cant Load Songs Data!!!!!");
+      alert("Server Failed while fetching songs")
     }
     const songData = responseData.data[0];
     const nameOfSong = songData.name;
@@ -24,6 +24,9 @@ try {
         let artist_name = primaryartists[i].name;
         artistNames+=artist_name+ ", "
       }
+    }
+    if(artistNames.length > 40){
+      artistNames=artistNames.substring(0,40)+" .....";
     }
     
     const image = songData.image[2];
@@ -42,6 +45,6 @@ try {
 } catch (error) {}
 
 function clicked(event,id){
-  window.location.href = `/index2.html?query=${id}`;
+  window.location.href = `/views/Songs.html?query=${id}`;
   console.log(id);
 }

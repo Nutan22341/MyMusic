@@ -120,16 +120,15 @@
 }
 
 .left-card {
+    height: fit-content;
+    min-width: 250px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    align-content: center;
-    row-gap: 2px;
-    gap: 1rem;
+    column-gap: 10%;
     padding: 1rem;
     cursor: pointer;
-
+    border-radius: 10px;
 }
 
 .left-card-para1 {
@@ -148,16 +147,8 @@
     }
 }
 
-.left-card-play-svg {
-    position: absolute;
-    width: 2.3rem;
-    top: 8rem;
-    left: 75%;
-    border-radius: 50%;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
 .artist-img{
+    border-radius: 5px;
     width: 40%;
     border: 1px solid black;
     color: white;

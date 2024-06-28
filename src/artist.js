@@ -1,5 +1,5 @@
 // ids of some famous artist
-const ArtistArray = ["459320","456323","455130","459633","455275","455125","485956","1546334","712878","468245","458918","464932","1970745"];
+const ArtistArray = ["459320","456323","455130","459633","455275","455125","485956","1546334","712878","468245","458918","464932","1970745","455917","455142","456102"];
 //insertion of cards will happen here
 const parentContainer = document.getElementById("left-box-artist-container");
 
@@ -25,12 +25,12 @@ try {
       const artistType = artistData.type;
 
       const artistDiv = `<div class="left-card" onclick="Artistclicked(event,'${artistID}')">
-                        <img src="${imageURL}" alt="img" class="artist-img" />
-                    <div class="artist-desc">
-                        <span class="left-card-para1">${nameOfartist}</span>
-                        <span class="left-card-para2">${artistType}</span>
-                    </div>
-                    </div>`
+                          <img src="${imageURL}" alt="img" class="artist-img" />
+                          <div class="artist-desc">
+                            <span class="left-card-para1">${nameOfartist}</span>
+                            <span class="left-card-para2">${artistType}</span>
+                          </div>
+                        </div>`
       parentContainer.innerHTML += artistDiv;
       
     });
@@ -39,7 +39,6 @@ try {
   function Artistclicked(event,id){
     const encodedMessage = encodeURIComponent(id);
     window.location.href = `/views/Artist.html?artist=${encodedMessage}`;
-    alert("artist clicked with artist id as: "+id)
     console.log(id);
   }
   

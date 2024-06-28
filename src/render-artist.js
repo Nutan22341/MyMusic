@@ -89,6 +89,9 @@ const addTopAlbums = (topAlbums) => {
                     artistName += artist_name + ", ";
                 }
             }
+            if(artistName.length > 40){
+                artistName=artistName.substring(0,40)+" .....";
+            }
             let div = `<div class="top-card">
                     <img src="${image}" alt="img" />
                     <p class="top-card-para1">${albumName}</p>
@@ -128,6 +131,9 @@ const addSingles = (singles) => {
                         artistName += artist_name + ", ";
                     }
                 }
+                if(artistName.length > 40){
+                    artistName=artistName.substring(0,40)+" .....";
+                }
                 let div = `<div class="top-card">
                     <img src="${image}" alt="img" />
                     <p class="top-card-para1">${albumName}</p>
@@ -147,7 +153,7 @@ const addSingles = (singles) => {
 };
 
 function songClicked(event, id) {
-    alert("song clicked with song id as: " + id);
+    window.location.href = `/views/Songs.html?query=${id}`;
     console.log(id);
 }
 
