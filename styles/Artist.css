@@ -100,20 +100,22 @@ body {
 .top-card{
     position: relative;
     display: flex;
-    border: 2px solid yellow;
     flex-direction: column;
-  
     min-width: 200px;
     max-width: 20%;
+    height: fit-content;
 }
 
 .top-card:hover{
+    border-radius: 10px;
+    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
     .top-card-svg{
         opacity: 1;
     }
 }
 .top-card img{
     width: 80%;
+    border-radius: 5px;
 }
 
 .top-card-svg{
