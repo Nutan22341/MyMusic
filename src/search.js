@@ -197,7 +197,6 @@ const getSearchResults = async ()=>{
         }
         if(albums.length ===0){
             document.getElementById("album-not-found").style.display="block";
-            alert("nothing to show in albums section");
         }
         else{
             addAlbums(albums);
@@ -229,7 +228,7 @@ function artistClicked(event,id){
 }
 
 function albumClicked(event,id){
-    alert("album clicked with album id as: "+id)
+    window.location.href = `/views/Album.html?album=${id}`;
     console.log(id);
 }
 

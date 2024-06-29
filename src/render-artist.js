@@ -52,6 +52,9 @@ const addTopSongs = (topSongs) => {
                     artistName += artist_name + ", ";
                 }
             }
+            if(artistName.length > 40){
+                artistName=artistName.substring(0,30)+" .....";
+            }
             let div = `<div class="top-card">
                     <img src="${image}" alt="img" />
                     <p class="top-card-para1">${songName}</p>

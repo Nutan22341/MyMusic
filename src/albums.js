@@ -49,6 +49,6 @@ try {
 } catch (error) {}
 
 function albumclicked(event,id){
-  alert("album clicked with id as :"+id);
+  window.location.href = `/views/Album.html?album=${id}`;
   console.log(id);
 }
