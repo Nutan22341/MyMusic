@@ -161,7 +161,7 @@ function songClicked(event, id) {
 }
 
 function albumClicked(event, id) {
-    alert("album clicked with album id as: " + id);
+    window.location.href = `/views/Album.html?album=${id}`;
     console.log(id);
 }
 
