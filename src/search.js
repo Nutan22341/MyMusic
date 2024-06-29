@@ -233,6 +233,6 @@ function albumClicked(event,id){
 }
 
 function playlistClicked(event,id){
-    alert("playlist clicked with playlist id as: "+id)
+    window.location.href = `/views/playlistsong.html?query=${id}`;
     console.log(id);
 }
