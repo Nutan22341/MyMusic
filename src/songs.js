@@ -37,14 +37,14 @@ try {
                         <img src="${imageURL}" alt="img">
                         <p class="right-card-para1">${nameOfSong}</p>
                         <p class="right-card-para2">${artistNames}</p>
-                        <svg onclick="clicked(event,'${songID}')" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="right-card-play-svg" style="background-color: #1ed760;"  ><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z" ></path></svg>
+                        <svg onclick="songclicked(event,'${songID}')" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="right-card-play-svg" style="background-color: #1ed760;"  ><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z" ></path></svg>
                     </div>`
     SongparentContainer.innerHTML += songDiv;
     
   });
 } catch (error) {}
 
-function clicked(event,id){
+function songclicked(event,id){
   window.location.href = `/views/Songs.html?query=${id}`;
   console.log(id);
 }
