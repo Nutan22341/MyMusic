@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist</title>
+    <script src="../src/render-artist.js" defer></script>
+    <link rel="stylesheet" href="../styles/Artist.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="artist-data-box">
+            <img src="../assets/account.png" alt="artist-image" id="artist-img">
+            <div class="artist-data">
+                <div class="artist-data-box1">
+                    <h1 id="artist-name">Name of Artist</h1>
+                    <h3 id="artist-type">type of artist</h3>
+                </div>
+                <div class="artist-data-box2">
+                    <p id="artist-follow-count">Follower Count:&nbsp;&nbsp;</p>
+                    <p id="artist-fan-count">Fan Count:&nbsp;&nbsp;</p>
+                    <p id="artist-lang">Dominant Language:&nbsp;&nbsp;</p>
+                    <p id="artist-dominant-type">Dominant Type:&nbsp;&nbsp;</p>
+                </div>
+            </div>
+        </div>
+        <div class="artist-top-songs-container">
+            <h2>Top Songs</h2>
+            <div id="artist-top-songs">
+                <!--   songs will be added here dynamically -->
+            </div>
+        </div>
+        <div class="artist-top-albums-container">
+            <h2>Top Albums</h2>
+            <div id="artist-top-albums">
+                <!-- albus will be added here dynamically -->
+            </div>
+        </div>
+
+        <div class="artist-top-singles-container">
+            <h2>Singles</h2>
+            <div id="artist-top-singles">
+                <!-- singles will be added here dynamically -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

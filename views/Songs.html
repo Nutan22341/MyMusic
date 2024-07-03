@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song</title>
+    <link rel="stylesheet" href="../styles/Songs.css">
+    <script src="../src/render-song.js" defer></script>
+</head>
+<body>
+    <div class="outer-song-container">
+        <div class="inner-song-container">
+            <!-- for song image -->
+             <div class="inner-box">
+                <div class="left-container"></div>
+                <!-- all about the image -->
+                <div class="right-container">
+                    <h1 class="songName"></h1>
+                    <div class="song-desc">
+                        <p class="artist-names"></p>
+                        <p class="album-name"></p>
+                    </div>
+                    <video width="400" height="140" controls  id="playsong">
+                        <source src="movie.mp4" type="video/mp4" id="play">
+                      </video>
+                </div>
+             </div>
+             <div class="footer-line"></div>
+             <p class="footer-section">@Data fetched using JioSavanAPI</p>
+        </div>
+    </div>
+</body>
+</html>

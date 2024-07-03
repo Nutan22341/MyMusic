@@ -211,3 +211,9 @@
     text-decoration: none;
     color: #a6a6a6;
 }
+.logo{
+    color: white;
+    font-size: 1.8rem;
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+}
